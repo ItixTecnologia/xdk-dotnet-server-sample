@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ReleaseVersion>1.0.0-alpha.1</ReleaseVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\XDK.Sample.Contracts\XDK.Sample.Contracts.csproj" />
+    <ProjectReference Include="..\XDK.Sample.Domain\XDK.Sample.Domain.csproj" />
+  </ItemGroup>
+</Project>

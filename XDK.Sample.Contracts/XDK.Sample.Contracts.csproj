@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ReleaseVersion>1.0.0-alpha.1</ReleaseVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\XDK.Sample.Models\XDK.Sample.Models.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="XDK.Application" Version="1.0.3" />
+  </ItemGroup>
+</Project>

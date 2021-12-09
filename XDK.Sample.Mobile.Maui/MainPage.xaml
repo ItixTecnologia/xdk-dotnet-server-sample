@@ -1,0 +1,43 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XDK.Sample.Mobile.Maui.MainPage"
+             BackgroundColor="{DynamicResource SecondaryColor}">
+    <ScrollView Padding="{OnPlatform iOS='30,60,30,30', Default='30'}">
+        <Grid RowSpacing="20" RowDefinitions="Auto,Auto,Auto,Auto,Auto" Margin="20,35,20,20">
+            <Label 
+                Text="Dados remotos"
+                GridLayout.Row="0"
+                FontSize="18"
+                FontAttributes="Bold"
+                x:Name="CounterLabel"
+                HorizontalOptions="Center" />
+            <HorizontalStackLayout GridLayout.Row="1"  Padding="0" Margin="0,40,0,0" Spacing="5" HorizontalOptions="FillAndExpand">
+                <Image WidthRequest="22" HorizontalOptions="Start">
+                    <Image.Source>
+                        <FontImageSource FontFamily="FALight" Glyph="&#xf007;" />
+                    </Image.Source>
+                </Image>
+                <Entry 
+                     Placeholder="Nome de usuário" 
+                     HorizontalOptions="FillAndExpand"
+                     VerticalOptions="Center" />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout GridLayout.Row="2" Padding="0" Spacing="5" HorizontalOptions="FillAndExpand">
+                <Image WidthRequest="22">
+                    <Image.Source>
+                        <FontImageSource FontFamily="FALight" Glyph="&#xf023;" />
+                    </Image.Source>
+                </Image>
+                <Entry 
+                     Placeholder="Senha" 
+                     HorizontalOptions="FillAndExpand" 
+                     VerticalOptions="Center" 
+                     IsSpellCheckEnabled="false" 
+                     IsTextPredictionEnabled="false" 
+                     IsPassword="true" />
+            </HorizontalStackLayout>
+            <Button GridLayout.Row="3" Margin="0,40,0,0" Text="Entrar" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Clicked="OnCounterClicked" />
+            <Button GridLayout.Row="4" Margin="0,40,0,0" Text="Carregar" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Clicked="OnLoadClicked" />
+        </Grid>
+    </ScrollView>
+</ContentPage>

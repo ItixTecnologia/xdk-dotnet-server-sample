@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ReleaseVersion>1.0.0-alpha.1</ReleaseVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Specifications\" />
+    <Folder Include="Validators\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\XDK.Sample.Persistence\XDK.Sample.Persistence.csproj" />
+    <ProjectReference Include="..\XDK.Sample.Contracts\XDK.Sample.Contracts.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.0" />
+    <PackageReference Include="XDK.Data" Version="1.0.12" />
+    <PackageReference Include="XDK.Domain" Version="1.0.19" />
+  </ItemGroup>
+</Project>
